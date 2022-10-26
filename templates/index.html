@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Video Streaming Demonstration{% endblock %}
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+{% endblock %}
+
+{% block content %}
+    <img class= "center mt-5" style="display: block;margin-left: auto;margin-right: auto;width: 1100px;height: auto;" src="{{ url_for('video_feed') }}" alt="Video">
+{% endblock %}
