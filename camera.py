@@ -26,7 +26,7 @@ class VideoCamera(object):
             fc = gray_fr[y:y + h, x:x + w]
             roi = cv2.resize(fc, (48, 48))
             # # Compute the arithmetic mean.
-            roi = image.img_to_array(roi)
+            roi = image.image_utils.img_to_array(roi)
             roi -= np.mean(roi, axis=0)
             # Compute the standard deviation.
             roi /= np.std(roi, axis=0)
